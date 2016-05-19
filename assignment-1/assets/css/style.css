@@ -23,6 +23,7 @@ a:hover{
 	color: #4F95DD;
 }
 
+
 header{
 	height: 80px;
 	background-color: white;
@@ -54,6 +55,21 @@ ul{
     display: inline;
     align-items: center;
 	justify-content: center;
+}
+
+#contact{    
+	padding-left: 20px;
+    padding-right: 20px;
+    border-left: 2px #CCCCCC solid;
+    border-right: 2px #CCCCCC solid;
+}
+
+#about{
+	padding-right: 20px;
+}
+
+#portfolio{
+	padding-left: 20px;
 }
 
 body{
@@ -120,10 +136,6 @@ form{
 	color: #DFDFDF;
 	border: 2px #DFDFDF solid;
 }
-
-/*#portfolioDiv{
-	width: 610px;
-}*/
 
 .game{
 	float: left;
@@ -194,7 +206,7 @@ footer{
 	border-top: 5px #00AFA8 solid;
 }
 
-#portFooter{
+#portfolioFooter{
 	top: 1300%;
 }
 
@@ -202,7 +214,7 @@ footer{
 	color: white;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
 	.mainContent{
 		width: 420px;
 		padding-bottom: 10px;
@@ -273,22 +285,12 @@ footer{
 		top: 1250%;
 	}
 
-	#portFooter{
+	#portfolioFooter{
 		top: 2150%;
 	}
-@media screen and  (max-width: 768px) {
 
-	/* Comparison space
+@media screen and  (max-width: 865px) {
 
-#headshot{
-	width: 200px;
-	height: 200px;
-	float: left;
-	margin: 5px 20px 10px 25px;
-	border: 1px #CCCCCC solid;
-}
-
-*/
 
 	.mainContent{
 		width: 600px;
@@ -358,13 +360,139 @@ footer{
 		width:274px;
 	}
 
-	#portFooter{
+	#portfolioFooter{
 	top: 1400%;
-}
+	}
 
 }
 
 @media screen and  (max-width: 640px) {
- 
+
+	header{
+		height: 140px;
+	}
+
+	#name{
+		width: 100%;
+		height: 80px;
+		position: static;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: 'Roboto Slab', serif;
+	}
+
+	ul{
+		list-style-type: none;
+	    position: static;
+	    padding-top: 23px;
+	    padding-left: 25%;
+	}
+
+	.topLinks{
+	    display: inline;
+	    align-items: center;
+		justify-content: center;
+	}
+
+	#contact{    
+		margin-top: 20px;
+		padding-left: 20px;
+	    padding-right: 20px;
+	    border: none;
+	}
+
+	#about{
+		padding-right: 20px;
+	}
+
+	#portfolio{
+		padding-left: 20px;
+	}
+
+	.mainContent{
+		top: 180px;
+		width: 420px;
+		padding-bottom: 10px;
+	}
+
+	.mainContentHeader{
+		margin: auto;
+    	max-width: 360px;
+	}
+	
+	.game{
+		float: none;
+		margin: auto;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+
+	.game, #hangman, #rpg, #trivia, #rutgers, #rps{
+		width: 360px;
+		height: 268px;
+	}
+
+	.imageText{
+		width:360px;
+	}
+
+	#headshot{
+		width: auto;
+		height: auto;
+		float: none;
+		margin: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#aboutText{
+		line-height: 180%;
+    	padding-top: 20px;
+	}
+
+	.connect{
+		position: absolute;
+	    width: 420px;
+	    top: 705px;
+	    left: 10%;
+	}
+
+	#connectWithMe{
+		margin: 0px 27px 0px 27px;
+	    padding: 15px 0px 20px 7px;
+		text-align: left;
+	}
+
+	.connectImages{
+		width:60px;
+		margin: 0px 0px 15px 5px;
+	}
+
+	#SO-image{
+		width: 60px;
+	}
+
+	#indexConnect{
+		top: 1020px;
+	}
+
+	#portfolioConnect{
+		top: 1770px;
+	}
+
+	#indexFooter{
+		top: 900%;
+	}
+
+	#contactFooter{
+		top: 621%;
+	}
+
+	#portfolioFooter{
+		top: 1380%;
+	}
+
 }
 
