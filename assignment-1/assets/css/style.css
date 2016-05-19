@@ -60,6 +60,12 @@ body{
 	position: relative;
 }
 
+.mainContentHeader{
+	margin: 0px 27px 0px 27px;
+    padding: 30px 20px 20px 0px;
+    color: #00AFA8;
+    border-bottom: 2px #DDDDDD solid;
+}
 
 .mainContent{
 	width: 600px;
@@ -70,8 +76,23 @@ body{
 	top: 120px;
 }
 
+.connect{
+	background-color: white;
+	position: absolute;
+	right: 10%;
+	top:120px;
+	border: 2px #CCCCCC solid; 
+}
+
+#connectWithMe{
+	margin: 0px 27px 0px 27px;
+    padding: 30px 0px 20px 7px;
+	font-size: 22px;
+	color: #00AFA8;
+	border-bottom: 2px #DDDDDD solid;
+}
+
 #contactForm{
-	width: 440px;
 	padding-bottom: 25px;
 }
 
@@ -89,21 +110,25 @@ button:hover{
 	background-color: #4F95DD;
 }
 
-#portfolioDiv{
-	width: 690px;
+form{
+	line-height: 70%;
+	padding: 10px 20px 10px 30px;
 }
 
-.mainContentHeader{
-	margin: 0px 27px 0px 27px;
-    padding: 30px 20px 20px 0px;
-    color: #00AFA8;
-    border-bottom: 2px #DDDDDD solid;
+#formName, #formEmail, #formMessage {
+	width: 90%;
+	color: #DFDFDF;
+	border: 2px #DFDFDF solid;
 }
+
+/*#portfolioDiv{
+	width: 610px;
+}*/
 
 .game{
 	float: left;
-	margin: 25px 25px 25px 25px;
-	border: 3px #666666 solid; 
+	margin: 15px 5px 15px 15px;
+	border: 1px #666666 solid; 
 	width: 274px;
 	height: 204px;
 }
@@ -139,32 +164,6 @@ button:hover{
 #aboutText{
 	line-height: 180%;
     padding: 0px 20px 10px 30px;
-}
-
-form{
-	line-height: 70%;
-	padding: 10px 20px 10px 30px;
-	width: 300px;
-}
-
-#connect{
-	background-color: white;
-	position: absolute;
-	right: 10%;
-	top:120px;
-	border: 2px #CCCCCC solid; 
-}
-
-#connectWithMe{
-	margin: 0px 27px 0px 27px;
-    padding: 30px 0px 20px 7px;
-	font-size: 22px;
-	color: #00AFA8;
-	border-bottom: 2px #DDDDDD solid;
-}
-
-#formMessage{
-	color:#777777;
 }
 
 .connectImages{
@@ -203,18 +202,7 @@ footer{
 	color: white;
 }
 
-/* Comparison space
-
-#headshot{
-	width: 200px;
-	height: 200px;
-	float: left;
-	margin: 5px 20px 10px 25px;
-	border: 1px #CCCCCC solid;
-}
-
-*/
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1000px) {
 	.mainContent{
 		width: 420px;
 		padding-bottom: 10px;
@@ -224,10 +212,7 @@ footer{
 		margin: auto;
     	max-width: 360px;
 	}
-
-	#portfolioDiv{
-		width: 420px;
-	}	
+	
 	.game{
 		float: none;
 		margin: auto;
@@ -259,7 +244,7 @@ footer{
     	padding-top: 20px;
 	}
 
-	#connect{
+	.connect{
 		width: 250px; 
 	}
 
@@ -291,11 +276,95 @@ footer{
 	#portFooter{
 		top: 2150%;
 	}
-@@media screen and  (max-width: 768px) {
- 
+@media screen and  (max-width: 768px) {
+
+	/* Comparison space
+
+#headshot{
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin: 5px 20px 10px 25px;
+	border: 1px #CCCCCC solid;
+}
+
+*/
+
+	.mainContent{
+		width: 600px;
 	}
 
-@@media screen and  (max-width: 640px) {
- 
+	.mainContentHeader{
+		margin: 0px 27px 0px 27px;
+	    padding: 30px 20px 20px 0px;
+	    max-width: 600px;
 	}
+
+	#headshot{
+		width: 200px;
+		height: 200px;
+		float: left;
+		margin: 5px 20px 10px 25px;
+	}
+
+	#aboutText{
+		line-height: 180%;
+	    padding: 0px 20px 10px 30px;
+	}
+
+	.connect{
+		position: absolute;
+	    width: 600px;
+	    top: 650px;
+	    left: 10%;
+	}
+
+	#connectWithMe{
+		margin: 0px 27px 0px 27px;
+	    padding: 15px 0px 20px 7px;
+		text-align: left;
+	}
+
+	.connectImages{
+		width:60px;
+		margin: 0px 0px 15px 5px;
+	}
+
+	#SO-image{
+		width: 60px;
+	}
+
+	#indexConnect{
+		top: 585px;
+	}
+
+	#portfolioConnect{
+		top: 960px;
+	}
+
+	.game{
+		float: left;
+		margin: 15px 5px 15px 15px;
+		width: 274px;
+		height: 204px;
+		}
+
+	#hangman, #rpg, #trivia, #rutgers, #rps{
+		width: 274px;
+		height: 204px;
+	}
+
+	.imageText{
+		width:274px;
+	}
+
+	#portFooter{
+	top: 1400%;
+}
+
+}
+
+@media screen and  (max-width: 640px) {
+ 
+}
 
